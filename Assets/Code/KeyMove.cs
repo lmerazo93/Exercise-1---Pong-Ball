@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerMove : MonoBehaviour
+public class KeyMove : MonoBehaviour
 {
 public int speed = 10;
 
