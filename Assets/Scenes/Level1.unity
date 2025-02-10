@@ -1173,8 +1173,8 @@ GameObject:
   - component: {fileID: 1278784994}
   - component: {fileID: 1278784997}
   - component: {fileID: 1278784998}
-  - component: {fileID: 1278784999}
   - component: {fileID: 1278785000}
+  - component: {fileID: 1278785001}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -1267,7 +1267,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1315,21 +1315,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &1278784999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278784993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c697ca1ca074138b9d7a97407203a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 2088922826}
-  boomSound: {fileID: 8300000, guid: 647bbda710c831143a83718fd2bbf49c, type: 3}
-  blipSound: {fileID: 8300000, guid: 41cfd9d5497136546aec1b9eace0231f, type: 3}
 --- !u!82 &1278785000
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1427,6 +1412,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1278785001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278784993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c697ca1ca074138b9d7a97407203a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 2088922826}
+  boomSound: {fileID: 8300000, guid: d11217810c791464f940f0d0d4572513, type: 3}
+  blipSound: {fileID: 8300000, guid: f0a6f3aedaecaca4aa2e1a9aa96464bf, type: 3}
 --- !u!1001 &1357970461
 PrefabInstance:
   m_ObjectHideFlags: 0
