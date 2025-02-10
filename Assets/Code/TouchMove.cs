@@ -20,7 +20,7 @@ public class TouchMove : MonoBehaviour
             {
                 Vector2 newPos = Camera.main.ScreenToWorldPoint(myTouch.screenPosition);
                 newPos.y = transform.position.y;
-                transform.position=newPos;
+                transform.position = newPos;
             }
         }
 
