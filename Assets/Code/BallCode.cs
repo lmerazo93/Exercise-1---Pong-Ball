@@ -32,6 +32,9 @@ public class BallCode : MonoBehaviour
         rb.AddForce(accel * speed);
     }
 
+
+
+     
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Brick"))
@@ -48,10 +51,7 @@ public class BallCode : MonoBehaviour
 
             Destroy(other.gameObject);
 
-
-        } else {
-            audioSource.PlayOneShot(blipSound);
-        }
+}
+        audioSource = GetComponent<AudioSource>();
     }
-
 }
